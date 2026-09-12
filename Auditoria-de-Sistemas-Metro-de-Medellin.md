@@ -1,6 +1,6 @@
 Auditoría de Sistemas: Metro de Medellín - Área de Cables Aéreos
 
-Juan Pablo Marin – Diego Henao
+Juan Pablo Marin – Diego Henao Camayo
 
 1.
 En el metro de Medellín, específicamente en el área de cables aéreos, gestiona el mantenimiento de las telecabinas y procesos de mantenimiento mediante el ERP SAP, y la organización podría enfrentar riesgos operativos y regulatorios debido a la perdida de trazabilidad, ya que el sistema permite cerrar ordenes de componentes críticos o procedimientos sensibles, como el cerrar operaciones en ordenes de componentes como mordazas sin ingresar el serial único o con errores debido a la transcripción manual desde un papel.
