@@ -45,8 +45,10 @@ Determinar si el proceso de notificación y cierre de órdenes de trabajo en el 
 
 | ID del riesgo | Control a evaluar | Criterio y fuente | Procedimiento | Población o muestra | Evidencia esperada |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **R-01** | **Configuración de obligatoriedad de campos en SAP PM** (Diseño del control) | El campo *Serial* debe ser obligatorio en el sistema (Fuente: COBIT DSS06 / Políticas Cables Aéreos). | **Revisión interna:** Ingresar al entorno de producción SAP (transacción IW37) y revisar la parametrización de campos para las clases de órdenes de cables. Excepción buscada: El campo "Equipo/Serial" figura como "Opcional". | 100% de las clases de órdenes parametrizadas para Cables Aéreos en el ambiente de mantenimiento en base del periodo establecido. | Capturas de pantalla de la parametrización de los campos en SAP PM. |
+| **R-01** | **Configuración de obligatoriedad de campos en SAP PM** (Diseño del control) | El campo *Serial* debe ser obligatorio en el sistema (Fuente: COBIT DSS06 / Políticas Cables Aéreos). | **Revisión interna:** Ingresar al entorno de producción SAP (transacción IW33) y revisar la parametrización de campos para las clases de órdenes de cables. Excepción buscada: El campo "Equipo/Serial" figura como "Opcional". | 100% de las clases de órdenes parametrizadas para Cables Aéreos en el ambiente de mantenimiento en base del periodo establecido. | Capturas de pantalla de la parametrización de los campos en SAP PM. |
 | **R-01** | **Integridad de los datos de seriales en órdenes cerradas** (Operación del control) | Las órdenes cerradas deben poseer la trazabilidad del componente segun los DR 04, DR 12, DR 15. | **Análisis de datos:** Filtrar en SAP órdenes liquidadas. Aplicar filtros para contabilizar valores nulos (vacíos) o textos genéricos en los campos de "Texto confirmación" donde debería constar el serial. | Filtros aplicados en SAP según fecha, orden o periodo contable . | Exporte de un informe indicando la cantidad/porcentaje de filas con excepciones (campos de trazabilidad vacíos). |
+
+* 📊 **[Ver Programa de Auditoría (Matriz de Procedimientos en Excel)](./Programa_Auditoria_R01.xlsx)** 
 
 ---
 
