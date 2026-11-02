@@ -66,7 +66,7 @@ Dada la naturaleza del equipo auditor, donde un integrante es empleado activo de
 *   **Supuesto:** Se asume que en el entorno físico, los técnicos sí están anotando los seriales correctamente en las plantillas de papel y que las placas de los seriales en las pinzas son legibles, por lo que la pérdida de la información ocurre estrictamente en el proceso de transcripción o por la falta de obligatoriedad en SAP.
 *   **Información por solicitar:** Verificación de si los componentes críticos (como las mordazas) están creados correctamente en la base de datos maestra de SAP como "Equipos" individualizados (que soportan número de serie) y no como repuestos de inventario genérico.
 *   **Propuesta del equipo:** La parametrización estricta (*mandatory*) del campo de serial es un control propuesto por el equipo auditor para corregir la vulnerabilidad de diseño actual en la interfaz de usuario.
-*   **Limitaciones:** El alcance de esta auditoría es de carácter lógico y transaccional en el sistema SAP. No se realizarán inspecciones físicas en terreno para corroborar si el serial registrado ocasionalmente en el sistema coincide con la pieza física real instalada en la telecabina.
+*   **Limitaciones:** Se cuantificará el volumen de órdenes cerradas sin trazabilidad, pero no se realizará un análisis forense para perfilar qué operarios o digitadores específicos presentan las mayores tasas de error.
 
 ---
 **Anexo:** 
