@@ -4,7 +4,6 @@
 **Organización:** Empresa de Transporte Masivo del Valle de Aburrá (Metro de Medellín) — Área de Cables Aéreos  
 **Sistema auditado:** ERP SAP — Módulo PM (Plant Maintenance)  
 **Equipo auditor:** Juan Pablo Marin Espinosa, Diego Henao Camayo  
-**Fecha de entrega:** 29 de noviembre de 2026  
 
 ---
 
@@ -81,8 +80,6 @@ El equipo `195185` "Pinza Cabina 02 LJ" tiene seis sub-equipos (`293007`–`2930
 
 Además, la clase **no tiene característica para el N° de pinza (`07-468`)**.
 
-
-> *Nota:* los valores de la planilla se transcribieron desde imagen; deben contrastarse con el original antes de emitir la versión definitiva.
 
 ### D. Orden, notificación y mediciones
 
