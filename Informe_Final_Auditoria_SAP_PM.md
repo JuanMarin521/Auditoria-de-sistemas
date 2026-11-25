@@ -18,8 +18,6 @@
   3. **3 de 5 componentes comparables** presentan valor distinto o ausente en SAP respecto de la planilla (eje bocado, eje principal, eje J-H); la mordaza móvil además aparece con el serial cortado.
   4. Las mediciones de desgaste se escribieron en el **texto explicativo** aunque existen **puntos de medida** para ellas.
 
-> **Ajuste frente a la versión anterior:** el informe previo afirmaba que SAP PM "no cuenta con campos estructurados". Con las nuevas capturas, el hallazgo se reformula: la estructura existe, pero no hay control que obligue a usarla ni a conciliarla con la planilla. También se matiza el "truncamiento": el texto breve se corta a 40 caracteres, pero el **texto explicativo conserva** el contenido completo.
-
 ---
 
 ## 2. Objetivo y Alcance
@@ -65,17 +63,11 @@ Verificar si la transcripción, notificación y cierre de una orden de mantenimi
 | Eje J-H | — | `MI19A` (desinstalado) |
 | Pinza | — | `07-468` (desinstalado) |
 
-![Planilla](evidencia/01_planilla_orden_31531687.jpeg)
-![Ejes](evidencia/02_foto_ejes.jpeg)
-![Mordaza móvil](evidencia/03_foto_mordaza_movil.jpeg)
-![Mordaza fija](evidencia/04_foto_mordaza_fija.jpeg)
 
 ### B. Estructura en SAP PM
 
 El equipo `195185` "Pinza Cabina 02 LJ" tiene seis sub-equipos (`293007`–`293012`: mordaza fija, mordaza móvil, eje bocado, eje principal, muelle derecho y muelle izquierdo), cada uno ligado a un material (`5004197`–`5004202`). Están definidos **por posición de cabina**, no por serial físico.
 
-![Jerarquía](evidencia/05_sap_jerarquia_equipo_195185.png)
-![Estructura](evidencia/06_sap_estructura_equipo.png)
 
 ### C. Seriales en la clase `PINZA_TELECABINAS` frente a la planilla
 
@@ -89,7 +81,6 @@ El equipo `195185` "Pinza Cabina 02 LJ" tiene seis sub-equipos (`293007`–`2930
 
 Además, la clase **no tiene característica para el N° de pinza (`07-468`)**.
 
-![Clase](evidencia/07_sap_clase_pinza_telecabinas.png)
 
 > *Nota:* los valores de la planilla se transcribieron desde imagen; deben contrastarse con el original antes de emitir la versión definitiva.
 
@@ -97,10 +88,6 @@ Además, la clase **no tiene característica para el N° de pinza (`07-468`)**.
 
 La orden `31531687` ("LJ Cab 02 Mtto preventivo semestral S47") incluye la operación `0700 — Controlar desgaste de la pinza`. La notificación `17129571` se registró el 19.11.2026 (06:50–07:00, 10 min, confirmación final). El texto breve se limita a 40 caracteres y la casilla *Existe txt.expl.* indica que el detalle está en un texto largo, que contiene la **puesta a tope D4 = 6,7 mm** y los **desgastes 1 a 6 entre 43,0 y 43,5 mm**. La pinza ya tiene puntos de medida: ciclaje (`101705`), desgaste 1–6 (`121785`–`121790`) y puesta a tope D4 (`121791`).
 
-![Operaciones](evidencia/08_sap_operaciones_orden.png)
-![Notificación](evidencia/09_sap_notificacion_17129571.png)
-![Texto explicativo](evidencia/10_sap_texto_explicativo.png)
-![Puntos de medida](evidencia/11_sap_puntos_de_medida.png)
 
 ---
 
@@ -159,4 +146,3 @@ SAP PM **tiene dónde guardar** los seriales y mediciones críticas (equipos, cl
 - **Matriz de riesgos priorizada:** [`Matriz_Riesgos_Metro.md`](./Matriz_Riesgos_Metro.md)
 - **Programa de trabajo:** [`Programa_Auditoria_R01.xlsx`](./Programa_Auditoria_R01.xlsx)
 - **Presentación:** [`Auditoria_Sap_Final_v2.pptx`](./Auditoria_Sap_Final_v2.pptx)
-- **Evidencia:** carpeta [`evidencia/`](./evidencia) (planilla, fotos de piezas y 7 capturas de SAP PM; nombre del técnico ocultado).
